@@ -37,22 +37,6 @@ Clicking on a user card opens a **detailed profile page** for that user.
 ```
 https://jsonplaceholder.typicode.com/users
 ```
-**Data format:** JSON containing:
-- id
-- name
-- username
-- email
-- address
-- phone
-- website
-- company
 
----
 
-## 📝 Future Improvements
-- Add **search** and **filter** functionality
-- Show **user posts** on the details page
-- Use **Bootstrap/Tailwind** for enhanced UI
-- Add **dark mode** toggle
 
----
