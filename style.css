@@ -1,0 +1,151 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    margin: 0;
+    color: #fff;
+}
+
+/* HEADER - Glass Effect */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e68a00;
+    transform: scale(1.05);
+}
+
+/* USER CARDS */
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.user-card {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.user-card h3 {
+    margin-bottom: 10px;
+}
+
+.user-card p {
+    margin: 5px 0;
+}
+
+.user-card i {
+    color: #2193b0;
+    margin-right: 8px;
+}
+
+/* FOOTER - Glass Effect */
+footer {
+    text-align: center;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+}
+
+footer i {
+    color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    .user-card {
+        width: 90%;
+    }
+}
+
+
+
+.user-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.user-link:hover {
+    color: inherit;
+}
+
