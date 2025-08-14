@@ -3,44 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Directory</title>
-
-    <!-- Website Icon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <!-- CSS -->
+    <title>User Dashboard</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- HEADER -->
     <header>
-        <div class="logo">
-            <i class="fas fa-users"></i> User Directory
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-        </nav>
+        <h1><i class="fas fa-users"></i> User Dashboard</h1>
+        <button id="addUserBtn"><i class="fas fa-user-plus"></i> Add User</button>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <div class="controls">
-            <input type="text" id="searchInput" placeholder="Search users...">
-            <button id="reloadBtn"><i class="fas fa-sync-alt"></i> Reload</button>
-        </div>
+    <main id="userContainer"></main>
 
-        <div id="userContainer" class="user-container"></div>
-    </main>
-
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 User Directory | Made with Fetch API</p>
+        <p>© 2025 Neon Dashboard UI | Powered by Fetch API</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2 id="modalTitle">Add User</h2>
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button type="submit" id="saveUserBtn">Save</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
